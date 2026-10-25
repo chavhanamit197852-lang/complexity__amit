@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#08090b" />
+    <title>EventVerse — Discover what's happening around you</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <header class="navbar">
+      <a class="brand" href="#/" aria-label="EventVerse home"><span class="brand-mark">✦</span><span>event<span>verse</span></span></a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#/discover">Discover</a><a href="#/categories">Categories</a><a href="#/nearby">Nearby</a><a href="#/community">Community</a>
+      </nav>
+      <button class="button button-outline portal-trigger" type="button">Demo portals <span>↗</span></button>
+      <button class="mobile-menu" aria-label="Open menu">☰</button>
+    </header>
+
+    <main id="app"></main>
+
+    <footer class="footer">
+      <div class="footer-brand"><a class="brand" href="#/"><span class="brand-mark">✦</span><span>event<span>verse</span></span></a><p>Discover. Connect. Participate.</p></div>
+      <div class="footer-links"><a href="#/discover">Discover</a><a href="#/categories">Categories</a><a href="#/organizer">For organizers</a><a href="#/community">Community</a></div>
+      <div class="footer-note">Built for the next generation of communities.<br /><span>© 2026 EventVerse</span></div>
+    </footer>
+
+    <div id="modal-root"></div>
+    <div id="toast-root" aria-live="polite"></div>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
